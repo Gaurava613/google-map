@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        padding: 0%;
+        margin: 0%;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+    }
+
+    .allContent {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        background: red;
+        color: white;
+    }
+
+    .searchSec {
+        background: rebeccapurple;
+        padding: 20px;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .inputandbtn {
+        background: red;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .searchSec input {
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    .searchSec input::placeholder {
+        font-size: 1rem;
+        border: none;
+
+    }
+
+    .searchSec input[type=button] {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.3rem;
+    }
+
+   
+
+    .afterMainSec {
+        padding: 10px;
+    }
+
+    .afterMainSec {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .showIPSec {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 10px;
+
+    }
+    .sectwoallmaincontent{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .secTwoMain {
+        background: salmon;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+.secTwo{
+    display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: lawngreen;
+        width: 100%;
+}
+    .secTwo1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .secThree{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .secThree1{
+        display: flex;
+        flex-direction: row;
+    }
+    .secFiveMain{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .mainBox{
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    @media(max-width:540px) {
+        .searchSec {
+            font-size: 1rem;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .searchSec input {
+            width: 8em;
+        }
+
+        .searchSec input[type=button] {
+
+            font-size: 1rem;
+            width: 5em;
+        }
+        .secTwoMain {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+</style>
+
+<body>
+    <div class="mainSection">
+        <div class="allContent">
+            <header>
+                <h1>Project</h1>
+            </header>
+
+            <div class="mainContent">
+                <div class="mainContent1">
+                    <div class="searchSec">
+                        <label for="searchIP">
+                            MY Public IP ADDRESS :
+                        </label>
+                        <div class="inputandbtn">
+                            <input type="text" placeholder="Search...">
+                            <input type="button" value="Get Data">
+                        </div>
+                    </div>
+
+                    <!-- ============================== -->
+
+                    <div class="afterClickSection">
+                        <div class="afterMainSec">
+                            <!-- ---------------- -->
+                            <div class="showIPSec">
+                                <label for="afterIP">
+                                    MY Public IP ADDRESS :
+                                </label>
+                                <div id="showIP">
+                                    400606
+                                </div>
+                            </div>
+                            <!-- --------XXX-------- -->
+
+                            <!-- ---------------- -->
+                            <div class="sectwoallmaincontent">
+                                <div class="secTwo">
+                                    <div class="secTwoMain">
+                                        <div class="secTwo1">
+                                            <label for="lati">Lat : </label>
+                                            <div id="lat">
+                                                one
+                                            </div>
+                                        </div>
+
+                                        <div class="secTwo1">
+                                            <label for="city">City : </label>
+                                            <div id="city">
+                                                one
+                                            </div>
+                                        </div>
+
+                                        <div class="secTwo1">
+                                            <label for="org">organisation : </label>
+                                            <div id="organisation">
+                                                one
+                                            </div>
+                                        </div>
+
+                                        <div class="secTwo1">
+                                            <label for="long">Long : </label>
+                                            <div id="long">
+                                                one
+                                            </div>
+                                        </div>
+
+                                        <div class="secTwo1">
+                                            <label for="region">Region : </label>
+                                            <div id="region">
+                                                one
+                                            </div>
+                                        </div>
+
+                                        <div class="secTwo1">
+                                            <label for="hostname">Hostname : </label>
+                                            <div id="hostname">
+                                                one
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- --------XXX-------- -->
+
+                                    <!-- ---------------- -->
+                                    <div class="mapSec2">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241124.70896159892!2d72.83697138908728!3d19.21381857450631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8fcfe76fd59%3A0xcf367d85f7c50283!2sThane%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1697262841503!5m2!1sen!2sin"
+                                            width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+
+                                    <!-- --------XXX-------- -->
+
+                                    <!-- ---------------- -->
+
+                                    <div class="secThree">
+
+                                        <div class="secThree1">
+                                        <label for="timezone">Time Zone : </label>
+                                        <div id="timezone">
+                                            12:00:00
+                                        </div>
+                                    </div>
+
+                                    <div class="secThree1">
+                                        <label for="dateTime">Date And Time : </label>
+                                        <div id="dateTime">
+                                            12:00:00 / 1apr2002
+                                        </div>
+                                    </div>
+                                        <div class="secThree1">
+                                        <label for="pincode">Pincode : </label>
+                                        <div id="pincode">
+                                            400606
+                                        </div>
+                                    </div>
+                                        <div class="secThree1">
+                                        <label for="message">Message : </label>
+                                        <div id="message">
+                                            hi
+                                        </div>
+                                    </div>
+                                       
+                                        
+                                    
+                                    </div>
+
+                                    <!-- --------XXX-------- -->
+
+                                    <!-- ---------------- -->
+                                    <div class="secFour">
+                                        <div class="filterSec">
+                                            <input type="text" placeholder="Filter">
+                                        </div>
+                                    </div>
+                                    <!-- --------XXX-------- -->
+
+                                    <!-- ---------------- -->
+                                    <div class="secFive">
+                                        <div class="secFiveMain">
+                                            <div class="mainBox">
+                                                <label for="name">Name : </label>
+                                                <div id="name">
+
+                                                </div>
+                                                <label for="name">Branch Type : </label>
+                                                <div id="branchtype">
+
+                                                </div>
+                                                <label for="name">Delivery Status : </label>
+                                                <div id="deliverystatus">
+
+                                                </div>
+                                                <label for="name">District : </label>
+                                                <div id="district">
+
+                                                </div>
+                                                <label for="name">Division : </label>
+                                                <div id="division">
+
+                                                </div>
+                                            </div>
+
+                                                <div class="mainBox">
+                                                    <label for="name">Name : </label>
+                                                    <div id="name">
+
+                                                    </div>
+                                                    <label for="name">Branch Type : </label>
+                                                    <div id="branchtype">
+
+                                                    </div>
+                                                    <label for="name">Delivery Status : </label>
+                                                    <div id="deliverystatus">
+
+                                                    </div>
+                                                    <label for="name">District : </label>
+                                                    <div id="district">
+
+                                                    </div>
+                                                    <label for="name">Division : </label>
+                                                    <div id="division">
+
+                                                    </div>
+                                                </div>
+
+                                                    <div class="mainBox">
+                                                        <label for="name">Name : </label>
+                                                        <div id="name">
+
+                                                        </div>
+                                                        <label for="name">Branch Type : </label>
+                                                        <div id="branchtype">
+
+                                                        </div>
+                                                        <label for="name">Delivery Status : </label>
+                                                        <div id="deliverystatus">
+
+                                                        </div>
+                                                        <label for="name">District : </label>
+                                                        <div id="district">
+
+                                                        </div>
+                                                        <label for="name">Division : </label>
+                                                        <div id="division">
+
+                                                        </div>
+                                                    </div>
+                                                        <div class="mainBox">
+                                                            <label for="name">Name : </label>
+                                                            <div id="name">
+
+                                                            </div>
+                                                            <label for="name">Branch Type : </label>
+                                                            <div id="branchtype">
+
+                                                            </div>
+                                                            <label for="name">Delivery Status : </label>
+                                                            <div id="deliverystatus">
+
+                                                            </div>
+                                                            <label for="name">District : </label>
+                                                            <div id="district">
+
+                                                            </div>
+                                                            <label for="name">Division : </label>
+                                                            <div id="division">
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- --------XXX-------- -->
+
+                                            </div>
+                                        </div>
+                                        <!-- ===========XXX=================== -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+
+                        </div>
+</body>
+
+</html>
